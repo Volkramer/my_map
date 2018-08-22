@@ -69,7 +69,6 @@ function geoposition(value){
       "thumbMaps": false
     },
   };
-  console.log(dataSend);
   $.post('http://www.mapquestapi.com/geocoding/v1/address?key=' + key, dataSend, function(data) {
     for (var result of data.results[0].locations) {
       console.log(result);
